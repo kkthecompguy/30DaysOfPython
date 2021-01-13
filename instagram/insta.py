@@ -140,4 +140,4 @@ def automate_likes(browser):
       except:
         pass
 
-# automate_likes(browser)
+automate_likes(browser)
