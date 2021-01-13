@@ -49,7 +49,7 @@ def click_to_follow(browser, url):
       pass
 
 
-new_user_url = 'https://instagram.com/kallehallden'
+new_user_url = 'https://instagram.com/jakobowsky'
 time.sleep(3)
 click_to_follow(browser, new_user_url)
 
@@ -97,9 +97,9 @@ def scrape_and_save(elements):
             if chunk:
               f.write(chunk)
   
-# scrape_and_save(image_els)
-# time.sleep(5)
-# scrape_and_save(video_els)
+scrape_and_save(image_els)
+time.sleep(5)
+scrape_and_save(video_els)
 
 def automate_comments(browser, content="Awesome"):
   comment_xpath_str = "//textarea[contains(@placeholder, 'Add a comment')]"
@@ -140,4 +140,4 @@ def automate_likes(browser):
       except:
         pass
 
-automate_likes(browser)
+# automate_likes(browser)
